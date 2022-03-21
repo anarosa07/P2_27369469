@@ -1,7 +1,7 @@
 {
   "name": "Yo",
   "version": "1.0.0",
-  "description": "Task 1 Programacion II",
+  "description": "",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
