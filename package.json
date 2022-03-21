@@ -1,7 +1,7 @@
 {
-  "name": "Yo",
+  "name": "ANA-P2",
   "version": "1.0.0",
-  "description": "",
+  "description": "Task 1 Programacion II",
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
