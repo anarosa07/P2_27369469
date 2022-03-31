@@ -7,13 +7,13 @@ Se queden en su pocision original*/
 }
 
 .ContenedorBlanco{
-	width:  1100px;
-    	height: 1100px;
+	width:  1000px;
+    	height: 1000px;
     	margin:0 auto;
    	padding:0.5em;
    	position:relative;
-   	left:-11px;
-    	overflow:hidden;
+   	left:-1px;
+    	overflow: hidden;
 
 
 	
