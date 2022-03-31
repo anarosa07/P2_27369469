@@ -21,10 +21,8 @@ Se queden en su pocision original*/
 /*Configuracion del body,para que se vea completo el curriculum*/
 body
 {
-	position: relative;
 	overflow-x: hidden;
 	margin:0 auto;
-	padding:0.5em;
 }
 
 #cont1 {
