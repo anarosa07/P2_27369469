@@ -13,7 +13,8 @@ Se queden en su pocision original*/
    	padding:0.5em;
    	position:relative;
    	left:-1px;
-    	overflow: hidden;
+	overflow: hidden;
+	padding-top: 0px
 
 
 	
