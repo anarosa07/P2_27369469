@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> CV Ana Ramos</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="stylesheets/styles.css">
+  <link rel="stylesheet" href="stylesheets/bootstrap.css">
+</head>
+<body>
+	<div id="cont1" style="float: left;">
+		<img class="imagen" src="images/foto.jpg" >
+		<h1 class="nombre"> Ana Rosa Ramos Bolivar</h1>
+			<h2 class="titulo"><b>DATOS PERSONALES:</b></h2>
+				<p class="inf"> Fecha de nacimiento: 14/07/2000 <br>Edad: 21 años<br>CI: 27.369.469 <br>Direccion: Av. Bolivar #131 San Francisco de Asis<br>Tlf: 0424-3760933<br> Email: ana06rosa@gmail.com</p>
+
+		<h2 class="titulo">HABILIDADES:</h2>
+			<p class="inf"> JAVASCRIPT</p>
+			<input type="range" value="50%" name="">
+			<p class="inf"> HTML</p>
+			<input type="range" value="60%" name="">
+			<p class="inf"> CSS</p>
+			<input type="range" value="40%" name="">
+
+		<h2 class="titulo">REDES SOCIALES:</h2>
+		<div style="float: left;">
+			<a href="https://www.instagram.com/anarossb_/"><img src="images/instagram.png" height="50px" width="50px"></a>
+		
+		</div>
+		<div style="float: left;">
+			<a href="https://www.facebook.com/ANAROSA0607"><img src="images/facebook.png" height="50px" width="50px"></a>
+		
+		</div>
+    <div class="position" style="position:relative; width:200px; top:-240px; left:190px;">
+			<form action="/" method="post">
+        <h2 class="titulo" style="position:relative; left:-40px"> Contactame</h2>
+
+				<div class="form-group">
+				  <label style="position:relative; left:-100px; top:10px; color:white;">Email</label>
+				  <input required="true" type="email" class="form-control" name="email" value="<%= contacts.email%>" placeholder="Ingrese su correo">
+				</div>
+				<div class="form-group">
+					<label style="color:white;">Nombre</label>
+					<input required="true" type="text" class="form-control" name="nombre" value="<%=contacts.nombre%>" placeholder="Ingrese su Nombre">
+				</div>
+				  <label style="color:white;">Comentario</label>
+				  <textarea required="true" class="form-control" rows="4" name="mensaje" placeholder="Ingrese su su mensaje"></textarea><%=contacts.mensaje%>
+        <br>
+				  <button type="submit" class="btn btn-primary">Enviar</button>
+				  <input type="hidden" name="ip" value="<%= contacts.ip%>"/>
+				  <input type="hidden" name="fecha" value="<%= contacts.fecha%>">
+				</div>
+		   </main>
+		   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+				<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+				<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	</div>
+	</div>
+	<div id="cont2" style="float: left;">
+		<h1 class="barras">EXPERIENCIA PROFESIONAL</h1>
+			<p class="titulos"><b>INVERSIONES EL TEIDE 2019 </b>07/2020 - 03/2021<br> </p>
+			<p class="contenidos"> Cargo: Cajera de compras, Villa de Cura</p>
+
+			<p class="titulos"><b>PELUQUERIA FASHION COLORS </b> 03/2021 - 08/2021<br> </p>
+			<p class="contenidos"> Cargo: Manicurista, Bogota Colombia</p>
+
+			<p class="titulos"><b>FARMACIA SAN FRANCISCO DE ASIS </b> 02/2022 - Actualmente<br> </p>
+			<p class="contenidos"> Cargo: Auxiliar de farmacia, San Francisco de Asis</p>
+
+		<h1 class="barras">IDIOMAS</h1>
+			<p class="titulos"><b>Español: </b>Nativo<br><br><b>Ingles: </b>Avanzado</p>
+
+		<h1 class="barras">EDUCACION</h1>
+			<p class="titulos"><b>THE LANGUAGE COLLEGE (TLC)</b></p>
+			<p class="contenidos"> Curso de ingles aprobado (Duracion: 3 años)</p>
+
+			<p class="titulos"><b>UNIVERSIDAD CENTRAL DE VENEZUELA (UCV)</b></p>
+			<p class="contenidos"> Tercer semestre aprobado de la carrera Ingenieria Petrolera</p>
+
+			<p class="titulos"><b>UNIVERSIDAD NACIONAL EXPERIMENTAL "ROMULO GALLEGOS" (UNERG)</b></p>
+			<p class="contenidos"> Cursante del cuarto semestre de la carrera Ingenieria de Sistemas</p>
+
+	</div>
+</body>
+</html>
