@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> CV Ana Ramos</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+  	<link rel="stylesheet" href="stylesheets/styles.css">
+  	<link rel="stylesheet" href="stylesheets/bootstrap.css">
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-NBSTEC159Q"></script>
+	<script>
+  	window.dataLayer = window.dataLayer || [];
+  	function gtag(){dataLayer.push(arguments);}
+  	gtag('js', new Date());
+  	gtag('config', 'G-NBSTEC159Q');
+</script>
+</head>
+<body>
+	<div id="cont1" style="float: left;">
+		<img class="imagen" src="images/foto.jpg" >
+		<h1 class="nombre"> Ana Rosa Ramos Bolivar</h1>
+			<h2 class="titulo"><%= __('DATOS')%></h2>
+				<p class="inf"><%= __('INFO')%></p>
+
+		<h2 class="titulo"><%= __('HABILIDADES')%></h2>
+			<p class="inf"> JAVASCRIPT</p>
+			<input type="range" value="50%" name="">
+			<p class="inf"> HTML</p>
+			<input type="range" value="60%" name="">
+			<p class="inf"> CSS</p>
+			<input type="range" value="40%" name="">
+
+		<h2 class="titulo"><%= __('REDES')%></h2>
+		<div style="float: left;">
+			<a href="https://www.instagram.com/anarossb_/"><img src="images/instagram.png" height="50px" width="50px"></a>
+		
+		</div>
+		<div style="float: left;">
+			<a href="https://www.facebook.com/ANAROSA0607"><img src="images/facebook.png" height="50px" width="50px"></a>
+		
+		</div>
+    <div class="position" style="position:relative; width:200px; top:-240px; left:190px;">
+			<form action="/" method="post">
+        <h2 class="titulo" style="position:relative; left:-40px"><%= __('CONTACTAME')%></h2>
+
+				<div class="form-group">
+				  <label style="position:relative; left:-100px; top:10px; color:white;">Email</label>
+				  <input required="true" type="email" class="form-control" name="email" value="<%= contacts.email%>" placeholder="Ingrese su correo">
+				</div>
+				<div class="form-group">
+					<label style="color:white;"><%= __('NOMBRE')%></label>
+					<input required="true" type="text" class="form-control" name="nombre" value="<%=contacts.nombre%>" placeholder="Ingrese su Nombre">
+				</div>
+				  <label style="color:white;"><%= __('COMENTARIO')%></label>
+				  <textarea required="true" class="form-control" rows="4" name="mensaje" placeholder="Ingrese su su mensaje"></textarea><%=contacts.mensaje%>
+        <br>                      
+<div class="g-recaptcha" data-sitekey="6LfNZR8gAAAAAGjN0Ee2vT2mdeLNkDLL3pDVU3AQ"></div>
+      <br/>
+				  <button type="submit" class="btn btn-primary"><%= __('ENVIAR')%></button>
+				  <a href="/login" class="btn btn-primary"><%= __('Iniciar')%></a>
+				  <input type="hidden" name="ip" value="<%= contacts.ip%>"/>
+				  <input type="hidden" name="fecha" value="<%= contacts.fecha%>">
+				</div>
+		   </main>
+		   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+				<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+				<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	</div>
+	</div>
+	<div id="cont2" style="float: left;">
+		<h1 class="barras"><%= __('EXPERIENCIA')%></h1>
+			<p class="titulos"><%= __('TRABAJO1')%><br> </p>
+			<p class="contenidos"><%= __('CARGO1')%></p>
+
+			<p class="titulos"><%= __('TRABAJO2')%><br> </p>
+			<p class="contenidos"><%= __('CARGO2')%></p>
+
+			<p class="titulos"><%= __('TRABAJO3')%><br> </p>
+			<p class="contenidos"><%= __('CARGO3')%></p>
+
+		<h1 class="barras"><%= __('IDIOMAS')%></h1>
+			<p class="titulos"><%= __('INFI')%></p>
+
+		<h1 class="barras"><%= __('EDUCACION')%></h1>
+			<p class="titulos"><b><%= __('E1')%></b></p>
+			<p class="contenidos"><%= __('IE1')%></p>
+
+			<p class="titulos"><b><%= __('E2')%></b></p>
+			<p class="contenidos"><%= __('IE2')%></p>
+
+			<p class="titulos"><b><%= __('E3')%></b></p>
+			<p class="contenidos"><%= __('IE3')%></p>
+
+	</div>
+	<aside>
+		<a href="/english">Traducir a Ingles</a>
+		<a href="/">Traslate to spanish</a>
+	</aside>
+</body>
+</html>
